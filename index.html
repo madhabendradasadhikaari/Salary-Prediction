@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Predictor</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #f4f7f6; display: flex; justify-content: center; align-items: center; height: 100vh; color: #333; }
+        .card-container { background-color: white; padding: 40px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); text-align: center; width: 100%; max-width: 400px; }
+        h1 { font-size: 24px; color: #2c3e50; margin-bottom: 24px; }
+        form { display: flex; flex-direction: column; gap: 16px; }
+        input[type="number"] { width: 100%; padding: 12px 16px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 16px; transition: 0.3s; }
+        input[type="number"]:focus { outline: none; border-color: #3498db; }
+        button { background-color: #3498db; color: white; padding: 14px; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        button:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <h1>Salary Prediction</h1>
+        <form action="/process" method="post">
+            <input type="number" name="Experience" placeholder="Years of Experience" required>
+            <button type="submit">Predict Salary</button>
+        </form>
+    </div>
+</body>
+</html>
